@@ -1,0 +1,6 @@
+_backup/
+data/
+code/
+!code/05-analyses/
+!code/utils/
+paper/
