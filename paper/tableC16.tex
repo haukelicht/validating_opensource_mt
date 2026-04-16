@@ -1,0 +1,40 @@
+
+\begin{table}
+\caption{Effect of using open-source vs. commercial machine translation models for translating input texts on classifiers' language-specific out-of-sample classification performance (F1 scores) in social media vs. other domains. Classifiers fine-tuned on old Google translations not included in comparison.}
+\begin{center}
+\begin{threeparttable}
+\begin{tabular}{l D{)}{)}{11)3} D{)}{)}{11)3}}
+\toprule
+ & \multicolumn{1}{c}{Model 1} & \multicolumn{1}{c}{Model 2} \\
+\midrule
+\emph{Type of model} (ref.: commercial MT model)  &                         &                         \\
+\quad open-source MT model                        & -0.009 \; (0.001)^{***} &                         \\
+\quad multilingual classifier                     & -0.022 \; (0.001)^{***} &                         \\
+\emph{Translation model} (ref.: DeepL)            &                         &                         \\
+\quad Google Translate                            &                         & 0.005 \; (0.002)^{**}   \\
+\quad OPUS-MT                                     &                         & 0.001 \; (0.002)        \\
+\quad M2M (1.2B)                                  &                         & -0.005 \; (0.001)^{***} \\
+\quad M2M (418M)                                  &                         & -0.014 \; (0.001)^{***} \\
+\quad multilingual                                &                         & -0.021 \; (0.001)^{***} \\
+\emph{Social media vs. other domains}             &                         &                         \\
+\quad social media data                           & 0.170 \; (0.003)^{***}  & 0.171 \; (0.005)^{***}  \\
+\quad open-source MT model X social media data    & -0.006 \; (0.005)       &                         \\
+\quad multilingual classifier X social media data & 0.028 \; (0.007)^{***}  &                         \\
+\quad Google Translate X social media data        &                         & -0.002 \; (0.007)       \\
+\quad OPUS-MT X social media data                 &                         & 0.002 \; (0.007)        \\
+\quad M2M (1.2B) X social media data              &                         & -0.010 \; (0.007)       \\
+\quad M2M (418M) X social media data              &                         & -0.016 \; (0.008)^{*}   \\
+\quad multilingual X social media data            &                         & 0.029 \; (0.008)^{***}  \\
+\midrule
+R$^2$                                             & 0.353                   & 0.354                   \\
+Adj. R$^2$                                        & 0.353                   & 0.353                   \\
+Num. obs.                                         & 97800                   & 97800                   \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\scriptsize{\item $^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$. \item The F1 score is measured on a scale from 0 to 1. A coefficient estimate of, for example, +0.01 (+0.001) represents an average increase of the F1 score by 0.01 (0.001), that is, one (a tenth of one) F1 score points. \item All models include data set, task/outcome, and language fixed effects. \item Standard errors clustered by data set, task/outcome, language, and, in case of tasks with more than two labels, by label class. }
+\end{tablenotes}
+\end{threeparttable}
+\label{tab:translation_model_effects_socialmedia}
+\end{center}
+\end{table}

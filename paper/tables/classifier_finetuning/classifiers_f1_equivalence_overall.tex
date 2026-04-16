@@ -1,0 +1,23 @@
+\begin{table}[!t]
+
+\caption{\label{tab:classifiers_f1_equivalence_overall}TOST equivalence tests for cross-language F1 score differences between commercial and open-source MT-based classifiers. $t$-statistics and $p$-values computed at $\alpha = 0.05$.}
+\centering
+\fontsize{10}{12}\selectfont
+\begin{tabular}[t]{lrrrrrr}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{3}{c}{Average F1 score} & \multicolumn{3}{c}{Equivalence bounds} \\
+\cmidrule(l{3pt}r{3pt}){2-4} \cmidrule(l{3pt}r{3pt}){5-7}
+Comparison & commercial & open-source & difference & $\pm 0.01$ & $\pm 0.02$ & $\pm 0.03$\\
+\midrule
+Google Translate vs. OPUS-MT & 0.676 & 0.674 & -0.002 & $t=-1.510$ ($p < 0.066$) & $t=-3.457$ ($p < 0.000$) & $t=-5.405$ ($p < 0.000$)\\
+Google Translate vs. M2M (418M) & 0.676 & 0.652 & -0.025 & $t=+3.391$ ($p < 1.000$) & $t=+1.102$ ($p < 0.865$) & $t=-1.187$ ($p < 0.118$)\\
+Google Translate vs. M2M (1.2B) & 0.676 & 0.657 & -0.019 & $t=+2.148$ ($p < 0.984$) & $t=-0.139$ ($p < 0.445$) & $t=-2.426$ ($p < 0.008$)\\
+DeepL vs. OPUS-MT & 0.667 & 0.674 & 0.007 & $t=-3.447$ ($p < 0.000$) & $t=-5.492$ ($p < 0.000$) & $t=-7.538$ ($p < 0.000$)\\
+DeepL vs. M2M (418M) & 0.667 & 0.652 & -0.016 & $t=+1.402$ ($p < 0.920$) & $t=-1.051$ ($p < 0.147$) & $t=-3.504$ ($p < 0.000$)\\
+DeepL vs. M2M (1.2B) & 0.667 & 0.657 & -0.010 & $t=+0.072$ ($p < 0.529$) & $t=-2.378$ ($p < 0.009$) & $t=-4.829$ ($p < 0.000$)\\
+commercial vs. open-source & 0.665 & 0.658 & -0.006 & $t=-1.472$ ($p < 0.071$) & $t=-5.338$ ($p < 0.000$) & $t=-9.204$ ($p < 0.000$)\\
+commercial vs. open-source\,$^{a}$ & 0.672 & 0.663 & -0.009 & $t=-0.461$ ($p < 0.322$) & $t=-3.602$ ($p < 0.000$) & $t=-6.742$ ($p < 0.000$)\\
+\bottomrule
+\multicolumn{7}{l}{\textsuperscript{} $^{a}$ Omitting results for classifiers based on old Google Translate translations and M2M (418M).}\\
+\end{tabular}
+\end{table}

@@ -1,0 +1,20 @@
+\begin{table}[!t]
+
+\caption{\label{tab:equivalence_input_similarity}$t$-tests and equivalence bounds for difference between commercial and open-source machine translation-based LDA topic models relative to benchmark LDA model fitted to human expert translations.}
+\centering
+\fontsize{10}{12}\selectfont
+\begin{tabular}[t]{lrrrrr}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{2}{c}{\$t\$-Test} & \multicolumn{3}{c}{Equivalence bounds} \\
+\cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-6}
+Language & Difference & $p$-value & $\pm 0.01$ & $\pm 0.02$ & $\pm 0.03$\\
+\midrule
+Danish & 0.013 & 0.000 & $t=+1.609$ ($p < 0.946$) & $t=-3.160$ ($p < 0.001$) & $t=-7.929$ ($p < 0.000$)\\
+German & -0.006 & 0.012 & $t=-7.026$ ($p < 0.000$) & $t=-11.526$ ($p < 0.000$) & $t=-16.027$ ($p < 0.000$)\\
+Spanish & -0.006 & 0.001 & $t=-9.418$ ($p < 0.000$) & $t=-15.379$ ($p < 0.000$) & $t=-21.340$ ($p < 0.000$)\\
+French & -0.005 & 0.007 & $t=-8.189$ ($p < 0.000$) & $t=-13.699$ ($p < 0.000$) & $t=-19.209$ ($p < 0.000$)\\
+Polish & 0.005 & 0.032 & $t=-2.184$ ($p < 0.015$) & $t=-6.516$ ($p < 0.000$) & $t=-10.848$ ($p < 0.000$)\\
+\emph{Total} & 0.000 & 0.610 & $t=-10.377$ ($p < 0.000$) & $t=-21.264$ ($p < 0.000$) & $t=-32.151$ ($p < 0.000$)\\
+\bottomrule
+\end{tabular}
+\end{table}

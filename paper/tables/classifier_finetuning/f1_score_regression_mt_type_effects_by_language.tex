@@ -1,0 +1,73 @@
+
+\begin{center}
+\begin{longtable}{l D{)}{)}{11)3}}
+\caption{Effect of using open-source vs. commercial machine translation models for translating input texts on classifiers' language-specific out-of-sample classification performance (F1 scores) conditional on source language. Classifier fine-tuned using old Google or small M2M (418M) translations not included in comparison. The F1 score is measured on a scale from 0 to 1. A coefficient estimate of, for example, +0.01 (+0.001) represents an average increase of the F1 score by 0.01 (0.001), that is, one (a tenth of one) F1 score points. Model includes MT model, dataset and task fixed effects. Standard errors clustered by MT model, data set, task/outcome, language, and, in case of tasks with more than two labels, by label class.}
+\label{tab:f1_score_regression_mt_type_effects_by_language}\\
+\toprule
+ & \multicolumn{1}{c}{Model 1} \\
+\midrule
+\endfirsthead
+\toprule
+ & \multicolumn{1}{c}{Model 1} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\bottomrule
+\multicolumn{2}{l}{\scriptsize{$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$.}}\\
+\endlastfoot
+Intercept                                        & 0.569 \; (0.004)^{***}  \\
+\emph{Type of model} (ref.: commercial MT model) &                         \\
+\quad open-source                                & 0.011 \; (0.006)        \\
+\emph{Language fixed effects} (ref.: Bulgarian)  &                         \\
+\quad Czech                                      & 0.001 \; (0.007)        \\
+\quad Danish                                     & -0.030 \; (0.006)^{***} \\
+\quad Dutch                                      & -0.005 \; (0.005)       \\
+\quad Estonian                                   & 0.107 \; (0.006)^{***}  \\
+\quad Finish                                     & 0.010 \; (0.005)        \\
+\quad French                                     & -0.017 \; (0.005)^{***} \\
+\quad German                                     & 0.017 \; (0.005)^{***}  \\
+\quad Greek                                      & -0.018 \; (0.007)^{**}  \\
+\quad Hungarian                                  & 0.020 \; (0.006)^{***}  \\
+\quad Italian                                    & -0.004 \; (0.006)       \\
+\quad Lithuanian                                 & 0.042 \; (0.006)^{***}  \\
+\quad Norwegian                                  & 0.052 \; (0.007)^{***}  \\
+\quad Polish                                     & -0.001 \; (0.007)       \\
+\quad Portuguese                                 & 0.001 \; (0.007)        \\
+\quad Romanian                                   & 0.042 \; (0.006)^{***}  \\
+\quad Russian                                    & 0.036 \; (0.006)^{***}  \\
+\quad Slovak                                     & 0.006 \; (0.006)        \\
+\quad Slovenian                                  & -0.046 \; (0.006)^{***} \\
+\quad Spanish                                    & 0.001 \; (0.005)        \\
+\quad Swedish                                    & 0.008 \; (0.005)        \\
+\quad Turkish                                    & 0.031 \; (0.007)^{***}  \\
+\quad Ukrainian                                  & 0.054 \; (0.006)^{***}  \\
+\emph{Language interactions effects}             &                         \\
+\quad Czech $\times$ open-source MT model        & -0.021 \; (0.010)^{*}   \\
+\quad Danish $\times$ open-source MT model       & -0.016 \; (0.008)       \\
+\quad Dutch $\times$ open-source MT model        & -0.017 \; (0.007)^{*}   \\
+\quad Estonian $\times$ open-source MT model     & -0.015 \; (0.009)       \\
+\quad Finish $\times$ open-source MT model       & -0.018 \; (0.007)^{*}   \\
+\quad French $\times$ open-source MT model       & -0.001 \; (0.007)       \\
+\quad German $\times$ open-source MT model       & -0.015 \; (0.007)^{*}   \\
+\quad Greek $\times$ open-source MT model        & -0.004 \; (0.009)       \\
+\quad Hungarian $\times$ open-source MT model    & -0.019 \; (0.008)^{*}   \\
+\quad Italian $\times$ open-source MT model      & -0.005 \; (0.008)       \\
+\quad Lithuanian $\times$ open-source MT model   & -0.028 \; (0.009)^{**}  \\
+\quad Norwegian $\times$ open-source MT model    & -0.040 \; (0.010)^{***} \\
+\quad Polish $\times$ open-source MT model       & -0.037 \; (0.010)^{***} \\
+\quad Portuguese $\times$ open-source MT model   & -0.004 \; (0.010)       \\
+\quad Romanian $\times$ open-source MT model     & -0.009 \; (0.008)       \\
+\quad Russian $\times$ open-source MT model      & -0.013 \; (0.008)       \\
+\quad Slovak $\times$ open-source MT model       & -0.026 \; (0.009)^{**}  \\
+\quad Slovenian $\times$ open-source MT model    & 0.001 \; (0.009)        \\
+\quad Spanish $\times$ open-source MT model      & -0.020 \; (0.007)^{**}  \\
+\quad Swedish $\times$ open-source MT model      & -0.023 \; (0.007)^{**}  \\
+\quad Turkish $\times$ open-source MT model      & -0.045 \; (0.009)^{***} \\
+\quad Ukrainian $\times$ open-source MT model    & -0.029 \; (0.008)^{***} \\
+\midrule
+R$^2$                                            & 0.379                   \\
+Adj. R$^2$                                       & 0.378                   \\
+Num. obs.                                        & 56000                   \\
+\end{longtable}
+\end{center}

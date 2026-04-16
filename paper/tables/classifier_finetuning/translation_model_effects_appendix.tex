@@ -1,0 +1,25 @@
+
+\begin{table}
+\caption{Additional analyses of effect of using open-source vs. commercial machine translation models for translating input texts on classifiers' language-specific out-of-sample classification performance (F1 scores). Model 1: no small test sets size. Model 2: w/o small M2M translations.}
+\begin{center}
+\begin{threeparttable}
+\begin{tabular}{l D{)}{)}{11)3} D{)}{)}{11)3}}
+\toprule
+ & \multicolumn{1}{c}{Model 1} & \multicolumn{1}{c}{Model 2} \\
+\midrule
+\emph{Type of model} (ref.: commercial MT model) &                         &                         \\
+\quad open-source MT model                       & -0.008 \; (0.001)^{***} & -0.005 \; (0.001)^{***} \\
+\quad multilingual classifier                    & -0.018 \; (0.001)^{***} & -0.020 \; (0.001)^{***} \\
+\midrule
+R$^2$                                            & 0.349                   & 0.356                   \\
+Adj. R$^2$                                       & 0.349                   & 0.356                   \\
+Num. obs.                                        & 99650                   & 82600                   \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\scriptsize{\item $^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$. \item The F1 score is measured on a scale from 0 to 1. A coefficient estimate of, for example, +0.01 (+0.001) represents an average increase of the F1 score by 0.01 (0.001), that is, one (a tenth of one) F1 score points. \item All models include data set, task/outcome, and language fixed effects. \item Standard errors clustered by data set, task/outcome, language, and, in case of tasks with more than two labels, by label class. }
+\end{tablenotes}
+\end{threeparttable}
+\label{tab:translation_model_effects_appendix}
+\end{center}
+\end{table}

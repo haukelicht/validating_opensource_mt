@@ -1,0 +1,56 @@
+\begingroup\fontsize{10}{12}\selectfont
+\begingroup\fontsize{10}{12}\selectfont
+
+\begin{longtable}[t]{llcccccc}
+\caption{\label{tab:languagewise_f1_scores_lehmann+zobel_2018}Language-specific F1 scores by task and translation model in the Lehmann \& Zobel (2018) dataset. Values (in brackets) report averages (95\% confidence interval) of bootstrapped test set estimates.}\\
+\toprule
+ & Language & DeepL & Google Translate & M2M (1.2B) & M2M (418M) & multilingual & OPUS-MT\\
+\midrule
+\endfirsthead
+\caption[]{Language-specific F1 scores by task and translation model in the Lehmann \& Zobel (2018) dataset. Values (in brackets) report averages (95\% confidence interval) of bootstrapped test set estimates. \textit{(continued)}}\\
+\toprule
+ & Language & DeepL & Google Translate & M2M (1.2B) & M2M (418M) & multilingual & OPUS-MT\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\endlastfoot
+\addlinespace[3pt]
+\multicolumn{8}{p{\linewidth}}{\cellcolor[HTML]{DCDCDC}{classify the issue focus of quasi-sentences}}\\
+\addlinespace & Danish & 0.764 [0.671,~0.846] & 0.788 [0.698,~0.855] & 0.759 [0.669,~0.849] & 0.749 [0.660,~0.821] & 0.759 [0.668,~0.836] & 0.776 [0.701,~0.846]\\
+
+ & Dutch & 0.916 [0.884,~0.943] & 0.877 [0.837,~0.915] & 0.891 [0.850,~0.923] & 0.867 [0.821,~0.897] & 0.884 [0.831,~0.922] & 0.914 [0.879,~0.940]\\
+
+ & English & 0.769 [0.668,~0.846] & 0.787 [0.703,~0.863] & 0.787 [0.688,~0.861] & 0.725 [0.633,~0.818] & 0.755 [0.655,~0.827] & 0.769 [0.685,~0.848]\\
+
+ & Finish & 0.911 [0.848,~0.963] & 0.895 [0.821,~0.954] & 0.896 [0.846,~0.958] & 0.897 [0.829,~0.954] & 0.868 [0.780,~0.936] & 0.900 [0.835,~0.953]\\
+
+ & French & 0.690 [0.400,~0.857] & 0.563 [0.353,~0.759] & 0.594 [0.353,~0.800] & 0.690 [0.406,~0.897] & 0.455 [0.141,~0.732] & 0.566 [0.312,~0.750]\\
+
+ & German & 0.876 [0.852,~0.903] & 0.863 [0.837,~0.884] & 0.874 [0.858,~0.893] & 0.872 [0.851,~0.893] & 0.867 [0.848,~0.895] & 0.868 [0.847,~0.895]\\
+
+ & Spanish & 0.841 [0.786,~0.898] & 0.832 [0.772,~0.896] & 0.829 [0.776,~0.892] & 0.822 [0.780,~0.883] & 0.814 [0.763,~0.874] & 0.831 [0.776,~0.887]\\
+
+ & Swedish & 0.897 [0.836,~0.950] & 0.916 [0.857,~0.964] & 0.927 [0.881,~0.960] & 0.889 [0.836,~0.939] & 0.909 [0.840,~0.950] & 0.919 [0.864,~0.959]\\
+
+\addlinespace[3pt]
+\multicolumn{8}{p{\linewidth}}{\cellcolor[HTML]{DCDCDC}{classify the stance expressed in quasi-sentences about the issues of immigration and integration \(binary)}}\\
+\addlinespace & Danish & 0.752 [0.622,~0.838] & 0.737 [0.607,~0.822] & 0.717 [0.575,~0.803] & 0.721 [0.640,~0.825] & 0.674 [0.567,~0.779] & 0.740 [0.622,~0.849]\\
+
+ & Dutch & 0.771 [0.718,~0.820] & 0.775 [0.727,~0.807] & 0.802 [0.756,~0.842] & 0.755 [0.707,~0.810] & 0.710 [0.650,~0.765] & 0.760 [0.715,~0.810]\\
+
+ & English & 0.922 [0.869,~0.960] & 0.923 [0.878,~0.960] & 0.923 [0.869,~0.956] & 0.926 [0.878,~0.959] & 0.891 [0.838,~0.929] & 0.922 [0.870,~0.955]\\
+
+ & Finish & 0.872 [0.783,~0.934] & 0.881 [0.803,~0.941] & 0.876 [0.781,~0.947] & 0.884 [0.795,~0.950] & 0.895 [0.830,~0.949] & 0.864 [0.770,~0.921]\\
+
+ & French & 0.907 [0.751,~1.000] & 0.940 [0.836,~1.000] & 0.940 [0.836,~1.000] & 0.910 [0.828,~1.000] & 0.940 [0.867,~1.000] & 0.907 [0.751,~1.000]\\
+
+ & German & 0.897 [0.875,~0.917] & 0.889 [0.865,~0.906] & 0.897 [0.872,~0.916] & 0.886 [0.870,~0.902] & 0.887 [0.860,~0.903] & 0.889 [0.874,~0.908]\\
+
+ & Spanish & 0.933 [0.908,~0.956] & 0.944 [0.924,~0.964] & 0.939 [0.915,~0.961] & 0.936 [0.912,~0.965] & 0.918 [0.885,~0.948] & 0.923 [0.891,~0.949]\\
+
+ & Swedish & 0.896 [0.800,~0.945] & 0.907 [0.851,~0.960] & 0.890 [0.816,~0.941] & 0.857 [0.776,~0.935] & 0.899 [0.845,~0.949] & 0.865 [0.783,~0.922]\\*
+\end{longtable}
+\endgroup{}
+\endgroup{}

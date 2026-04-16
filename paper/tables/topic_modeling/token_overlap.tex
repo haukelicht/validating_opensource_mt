@@ -1,0 +1,19 @@
+\begin{table}[!t]
+
+\caption{\label{tab:token_overlap}Number of tokens in topic models' vocabulary and share of tokens in machine translation-based topic models that overlap with tokens in vocabulary of topic model fitted to human experts' translations.}
+\centering
+\fontsize{10}{12}\selectfont
+\begin{tabular}[t]{lrrrrr}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{3}{c}{$N$ tokens} & \multicolumn{2}{c}{Token overlap} \\
+\cmidrule(l{3pt}r{3pt}){2-4} \cmidrule(l{3pt}r{3pt}){5-6}
+Language & Experts & Google Translate & OPUS-MT & Google Translate & OPUS-MT\\
+\midrule
+Danish & 37761 & 37232 & 31472 & 0.754 & 0.707\\
+German & 36390 & 36575 & 31945 & 0.763 & 0.717\\
+Spanish & 38014 & 40524 & 32554 & 0.753 & 0.713\\
+French & 38064 & 33013 & 32790 & 0.741 & 0.712\\
+Polish & 37893 & 39184 & 32309 & 0.712 & 0.664\\
+\bottomrule
+\end{tabular}
+\end{table}

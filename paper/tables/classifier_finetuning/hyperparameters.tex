@@ -1,0 +1,59 @@
+\begin{table}[!t]
+
+\caption{\label{tab:hyperparameters}Number of epochs, training batch size, and gradient accumulation steps applied when fine-tuning our classifiers. We have held other hyper-parameters constant, using a learning rate of $1e^{-5}$, a warm-up ratio of $0.05$, and a weight decay of $0.1$.}
+\centering
+\fontsize{10}{12}\selectfont
+\begin{tabular}[t]{l>{\raggedright\arraybackslash}L{1.8in}rrrr}
+\toprule
+ & Task & Epochs & Training batch size & Gradient accumulation & Downsampling ratio\\
+\midrule
+\addlinespace[3pt]
+\multicolumn{6}{p{\linewidth}}{\cellcolor[HTML]{DCDCDC}{\textbf{Dupont \& Rachuj}}}\\
+\addlinespace\addlinespace[3pt]
+\multicolumn{6}{p{\linewidth}}{\cellcolor[HTML]{DCDCDC}{Manifesto Translations corpus \(Ivanusch \& Regel, 2024)}}\\
+\addlinespace & classify the policy topic discussed in quasi-sentence & 2 & 16 & 2 & 0.4\\
+
+ & classify the stance expressed in quasi-sentence & 3 & 16 & 2 & 0.4\\
+
+ & classify the stance expressed in quasi-sentence (binary) & 3 & 16 & 2 & 0.4\\
+
+ & classify the stance expressed in quasi-sentences about economic issues (binary) & 5 & 16 & 2 & 0.4\\
+
+ & classify the stance expressed in quasi-sentences about the issue of freedom and democracy (binary) & 5 & 16 & 2 & 0.4\\
+
+\addlinespace[3pt]
+\multicolumn{6}{p{\linewidth}}{\cellcolor[HTML]{DCDCDC}{\textbf{Lehmann \& Zobel}}}\\
+\addlinespace & classify the issue focus of quasi-sentences & 5 & 16 & 2 & 0.4\\
+
+ & classify the stance expressed in quasi-sentences about the issues of immigration and integration (binary) & 5 & 16 & 2 & 0.4\\
+
+\addlinespace[3pt]
+\multicolumn{6}{p{\linewidth}}{\cellcolor[HTML]{DCDCDC}{\textbf{Poljak}}}\\
+\addlinespace & detect whether a speech contains one or more attacks of parliamentary actors & 5 & 16 & 2 & 0.4\\
+
+ & classify the type of attack & 8 & 16 & 2 & 0.4\\
+
+ & detect uncivil attacks & 8 & 16 & 2 & \\
+
+\addlinespace[3pt]
+\multicolumn{6}{p{\linewidth}}{\cellcolor[HTML]{DCDCDC}{\textbf{Theocharis et al.}}}\\
+\addlinespace & classify the sentiment of tweets & 5 & 32 & 2 & 0.4\\
+
+ & classify the sentiment of tweets (binary) & 5 & 32 & 2 & 0.4\\
+
+ & classify the type of communication in tweets & 5 & 32 & 2 & 0.4\\
+
+ & detect impolite tweets & 5 & 32 & 2 & \\
+
+ & detect political tweets & 5 & 32 & 2 & \\
+
+ & classify the policy topic discussed in quasi-sentence & 2 & 16 & 2 & 0.4\\
+
+ & classify the stance expressed in quasi-sentence & 2 & 16 & 2 & 0.4\\
+
+ & classify the stance expressed in quasi-sentence (binary) & 3 & 16 & 2 & 0.4\\
+
+ & classify the stance expressed in quasi-sentences about economic issues (binary) & 5 & 16 & 2 & 0.4\\
+\bottomrule
+\end{tabular}
+\end{table}

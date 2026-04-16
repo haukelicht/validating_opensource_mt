@@ -1,0 +1,57 @@
+\begingroup\fontsize{10}{12}\selectfont
+
+\begin{longtable}[t]{l>{\raggedright\arraybackslash}L{1.45in}>{\centering\arraybackslash}C{0.75in}>{\centering\arraybackslash}C{0.85in}>{\centering\arraybackslash}C{0.85in}>{\centering\arraybackslash}C{0.75in}>{\centering\arraybackslash}C{0.75in}>{\centering\arraybackslash}C{0.8in}>{\centering\arraybackslash}C{0.8in}}
+\caption{\label{tab:overall_f1_scores}Overall (cross-language) F1 scores by dataset, outcome, and translation model Values (in brackets) report average (95\% confidence interval) of bootstrapped test set estimates. The last column reports these scores for multilingual classifiers for comparison.}\\
+\toprule
+ &  & DeepL & Google Translate & Google Translate (old) & OPUS-MT & M2M (1.2B) & M2M (418M) & multilingual\\
+\midrule
+\addlinespace[3pt]
+\multicolumn{9}{p{\linewidth}}{\cellcolor[HTML]{DCDCDC}{\textbf{Dupont \& Rachuj}}}\\
+\addlinespace & classify the policy topic discussed in quasi-sentence & 0.583 [0.576,~0.591] & 0.589 [0.582,~0.594] & 0.587 [0.579,~0.594] & 0.588 [0.581,~0.597] & 0.580 [0.572,~0.587] & 0.573 [0.565,~0.581] & 0.573 [0.564,~0.581]\\
+
+ & classify the stance expressed in quasi-sentence & 0.637 [0.630,~0.646] & 0.645 [0.636,~0.653] & 0.640 [0.632,~0.649] & 0.634 [0.626,~0.642] & 0.636 [0.629,~0.644] & 0.625 [0.615,~0.632] & 0.629 [0.622,~0.637]\\
+
+ & classify the stance expressed in quasi-sentence (binary) & 0.754 [0.743,~0.769] & 0.759 [0.741,~0.773] & 0.747 [0.734,~0.757] & 0.756 [0.742,~0.770] & 0.756 [0.743,~0.770] & 0.736 [0.724,~0.749] & 0.757 [0.743,~0.768]\\
+
+ & classify the stance expressed in quasi-sentences about economic issues (binary) & 0.716 [0.689,~0.738] & 0.698 [0.671,~0.724] & 0.718 [0.696,~0.737] & 0.698 [0.672,~0.721] & 0.728 [0.696,~0.757] & 0.700 [0.675,~0.722] & 0.711 [0.682,~0.735]\\
+
+ & classify the stance expressed in quasi-sentences about the issue of freedom and democracy (binary) & 0.864 [0.844,~0.891] & 0.865 [0.845,~0.889] & 0.864 [0.846,~0.890] & 0.860 [0.836,~0.889] & 0.856 [0.834,~0.883] & 0.851 [0.829,~0.876] & 0.884 [0.867,~0.908]\\
+
+\addlinespace[3pt]
+\multicolumn{9}{p{\linewidth}}{\cellcolor[HTML]{DCDCDC}{\textbf{Lehmann \& Zobel}}}\\
+\addlinespace & classify the issue focus of quasi-sentences & 0.869 [0.856,~0.883] & 0.856 [0.841,~0.871] &  & 0.863 [0.850,~0.878] & 0.861 [0.847,~0.881] & 0.851 [0.834,~0.870] & 0.851 [0.834,~0.873]\\
+
+ & classify the stance expressed in quasi-sentences about the issues of immigration and integration (binary) & 0.877 [0.865,~0.891] & 0.872 [0.859,~0.885] &  & 0.869 [0.855,~0.883] & 0.879 [0.863,~0.892] & 0.868 [0.854,~0.881] & 0.855 [0.842,~0.869]\\
+
+\addlinespace[3pt]
+\multicolumn{9}{p{\linewidth}}{\cellcolor[HTML]{DCDCDC}{\textbf{Poljak}}}\\
+\addlinespace & detect whether a speech contains one or more attacks of parliamentary actors & 0.786 [0.767,~0.797] & 0.783 [0.765,~0.803] & 0.775 [0.759,~0.792] & 0.782 [0.761,~0.799] & 0.774 [0.755,~0.789] & 0.775 [0.758,~0.794] & 0.770 [0.749,~0.792]\\
+
+ & classify the type of attack & 0.622 [0.587,~0.655] & 0.621 [0.590,~0.663] & 0.616 [0.578,~0.659] & 0.623 [0.578,~0.661] & 0.601 [0.558,~0.632] & 0.622 [0.589,~0.652] & 0.596 [0.569,~0.627]\\
+
+ & detect uncivil attacks & 0.557 [0.503,~0.610] & 0.560 [0.514,~0.614] & 0.541 [0.483,~0.584] & 0.550 [0.501,~0.606] & 0.546 [0.503,~0.584] & 0.548 [0.501,~0.597] & 0.503 [0.460,~0.542]\\
+
+\addlinespace[3pt]
+\multicolumn{9}{p{\linewidth}}{\cellcolor[HTML]{DCDCDC}{\textbf{Theocharis et al.}}}\\
+\addlinespace & classify the sentiment of tweets & 0.689 [0.671,~0.702] & 0.691 [0.673,~0.706] &  & 0.688 [0.667,~0.701] & 0.696 [0.677,~0.709] & 0.664 [0.647,~0.678] & 0.690 [0.677,~0.703]\\
+
+ & classify the sentiment of tweets (binary) & 0.929 [0.908,~0.946] & 0.926 [0.909,~0.944] &  & 0.923 [0.906,~0.937] & 0.913 [0.896,~0.932] & 0.912 [0.898,~0.927] & 0.922 [0.905,~0.938]\\
+
+ & classify the type of communication in tweets & 0.810 [0.799,~0.826] & 0.815 [0.801,~0.828] &  & 0.818 [0.806,~0.832] & 0.809 [0.794,~0.821] & 0.807 [0.795,~0.820] & 0.840 [0.830,~0.850]\\
+
+ & detect impolite tweets & 0.374 [0.332,~0.418] & 0.376 [0.328,~0.424] &  & 0.374 [0.336,~0.410] & 0.348 [0.301,~0.396] & 0.353 [0.304,~0.404] & 0.430 [0.379,~0.475]\\
+
+ & detect political tweets & 0.763 [0.743,~0.786] & 0.763 [0.744,~0.782] &  & 0.756 [0.739,~0.776] & 0.745 [0.723,~0.765] & 0.738 [0.723,~0.759] & 0.769 [0.750,~0.784]\\
+
+\addlinespace[3pt]
+\multicolumn{9}{p{\linewidth}}{\cellcolor[HTML]{DCDCDC}{Manifesto Translations corpus \(Ivanusch \& Regel, 2024)}}\\
+\addlinespace & classify the policy topic discussed in quasi-sentence & 0.604 [0.594,~0.612] &  &  &  & 0.592 [0.582,~0.600] & 0.590 [0.582,~0.599] & 0.578 [0.569,~0.588]\\
+
+ & classify the stance expressed in quasi-sentence & 0.597 [0.589,~0.607] &  &  &  & 0.596 [0.588,~0.605] & 0.586 [0.579,~0.595] & 0.584 [0.575,~0.592]\\
+
+ & classify the stance expressed in quasi-sentence (binary) & 0.814 [0.806,~0.826] &  &  &  & 0.807 [0.799,~0.820] & 0.798 [0.791,~0.808] & 0.799 [0.791,~0.811]\\
+
+ & classify the stance expressed in quasi-sentences about economic issues (binary) & 0.706 [0.679,~0.733] &  &  &  & 0.717 [0.695,~0.745] & 0.699 [0.675,~0.723] & 0.711 [0.690,~0.733]\\
+\bottomrule
+\end{longtable}
+\endgroup{}

@@ -1,0 +1,18 @@
+\begin{table}[!t]
+
+\caption{\label{tab:win_rate_estimates}Win rates of commercial MT-based classifier vs. open-source MT-based classifiers in test set examples where classifiers' predicted labels disagree but one of the two classifiers is correct.}
+\centering
+\fontsize{10}{12}\selectfont
+\begin{tabular}[t]{llllr}
+\toprule
+\multicolumn{1}{c}{MT model1} & \multicolumn{2}{c}{MT model2} & \multicolumn{3}{c}{ 1} & \multicolumn{4}{c}{ 2} & \multicolumn{5}{c}{ 3} \\
+\cmidrule(l{3pt}r{3pt}){1-1} \cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-6} \cmidrule(l{3pt}r{3pt}){7-10} \cmidrule(l{3pt}r{3pt}){11-15}
+commercial & open-source & win rate [95\% CI] & $p$-value & $N$\\
+\midrule
+DeepL & M2M (1.2B) & 0.533 [0.523, 0.543] & $p ≤ 0.000$ & 9787\\
+DeepL & OPUS-MT & 0.512 [0.498, 0.526] & $p ≤ 0.102$ & 4776\\
+Google Translate & M2M (1.2B) & 0.545 [0.533, 0.557] & $p ≤ 0.000$ & 6583\\
+Google Translate & OPUS-MT & 0.519 [0.504, 0.533] & $p ≤ 0.013$ & 4533\\
+\bottomrule
+\end{tabular}
+\end{table}

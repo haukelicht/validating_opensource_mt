@@ -1,0 +1,20 @@
+\begin{table}[!t]
+
+\caption{\label{tab:input_similarity}Summary statistics of cosine similarities between bag-of-words representations' onbtained from machine- and human-translated texts at document level. Columns grouped by translation model.}
+\centering
+\fontsize{10}{12}\selectfont
+\begin{tabular}[t]{lrrrrrrrrr}
+\toprule
+\multicolumn{2}{c}{ } & \multicolumn{4}{c}{Google Translate} & \multicolumn{4}{c}{OPUS-MT} \\
+\cmidrule(l{3pt}r{3pt}){3-6} \cmidrule(l{3pt}r{3pt}){7-10}
+Language & $N$ & Mean & Std. dev. & Min & Max & Mean & Std. dev. & Min & Max\\
+\midrule
+Danish & 2301 & 0.915 & 0.063 & 0.549 & 0.992 & 0.902 & 0.079 & 0.434 & 0.988\\
+German & 2148 & 0.915 & 0.074 & 0.488 & 0.991 & 0.920 & 0.072 & 0.279 & 0.992\\
+Spanish & 2335 & 0.929 & 0.059 & 0.483 & 0.991 & 0.935 & 0.056 & 0.614 & 0.992\\
+French & 2347 & 0.925 & 0.064 & 0.564 & 0.989 & 0.930 & 0.060 & 0.510 & 0.991\\
+Polish & 2338 & 0.913 & 0.073 & 0.475 & 0.989 & 0.908 & 0.085 & 0.130 & 0.990\\
+\emph{Total} & 11469 & 0.920 & 0.067 & 0.475 & 0.992 & 0.919 & 0.072 & 0.130 & 0.992\\
+\bottomrule
+\end{tabular}
+\end{table}

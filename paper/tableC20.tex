@@ -1,0 +1,26 @@
+
+\begin{table}
+\caption{OLS coefficient estimates of the effect of using open-source MT model instead of Google Translate on classifiers' agreement on test set examples' predicted labels realteive to DeepL-based classifiers. Google Translate-based classifiers average agreement with DeepL-based classifiers (within dataset, task, and language), shown in the intercept, used as comparison.}
+\begin{center}
+\begin{threeparttable}
+\begin{tabular}{l D{)}{)}{11)3}}
+\toprule
+ & \multicolumn{1}{c}{Model 1} \\
+\midrule
+Intercept  & 0.836 \; (0.021)^{***}  \\
+M2M (1.2B) & -0.011 \; (0.005)       \\
+M2M (418M) & -0.029 \; (0.005)^{***} \\
+OPUS-MT    & -0.011 \; (0.007)       \\
+\midrule
+R$^2$      & 0.565                   \\
+Adj. R$^2$ & 0.524                   \\
+Num. obs.  & 464                     \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\scriptsize{\item $^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$. \item Agreement is measured on a scale from 0 to 1. \item All models include data set, task/outcome, and language fixed effects. \item Standard errors clustered by data set, task/outcome, language, and, in case of tasks with more than two labels, by label class. }
+\end{tablenotes}
+\end{threeparttable}
+\label{tab:label_agreement_with_deepl}
+\end{center}
+\end{table}
