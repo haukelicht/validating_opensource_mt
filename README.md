@@ -15,7 +15,7 @@ The replication materials are organized in the following folders:
 
 - [`code/`](./code/): Contains the code for all experiments and analyses.
 - [`data/`](./data/): Contains the data used all experiments and analyses and quantitative results produced.
-- [[`paper/`](./paper/)](./paper/): Contains the figures and tables reported in the paper and the supporting materials.
+- [`paper/`](./paper/): Contains the figures and tables reported in the paper and the supporting materials.
 
 ### Code
 
